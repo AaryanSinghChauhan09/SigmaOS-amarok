@@ -1,64 +1,50 @@
-# SigmaOS-amarok Component Wiki
+# SigmaOS-SigmaOS-amarok Component Wiki
 
 ## Overview
-SigmaOS-amarok provides Amarok music player support and music management for the SigmaOS operating system. It demonstrates the music player subsystem and audio management within the SigmaOS ecosystem, following the principles of clear abstraction and deterministic music initialization.
+SigmaOS-SigmaOS-amarok provides GitHub description is a placeholder; component scope remains unclassified. for the SigmaOS operating system. It demonstrates the subsystem and integration within the SigmaOS ecosystem, following the principles of clear abstraction and deterministic initialization.
 
 ## Principles
 - Single Responsibility
-- Music Abstraction
-- Fail-Fast on Music Initialization Errors
-- Deterministic Music Setup
-- Clear Abstraction Over Music APIs
-- Composition over Inheritance for music extensions
+- SigmaOS-amarok Abstraction
+- Fail-Fast on SigmaOS-amarok Initialization Errors
+- Deterministic SigmaOS-amarok Setup
+- Clear Abstraction Over SigmaOS-amarok APIs
+- Composition over Inheritance for SigmaOS-amarok extensions
 
 ## Architecture
-SigmaOS-amarok follows a music pattern:
-- **Music Core**: Provides music player management, playlist handling, and music library organization
-- **Player Integration**: Supports Amarok music player, music playback, and music library management
-- **Playlist Management**: Supports playlist creation, playlist editing, and playlist organization
-- **Error Handling**: Fail-fast on invalid music configurations or unsupported music types
+SigmaOS-SigmaOS-amarok follows a SigmaOS-amarok pattern:
+- **SigmaOS-amarok Core**: Provides SigmaOS-amarok support, SigmaOS-amarok management, and SigmaOS-amarok tracking
+- **Management**: Supports SigmaOS-amarok management, SigmaOS-amarok configuration, and SigmaOS-amarok lifecycle
+- **Tracking**: Supports SigmaOS-amarok status, SigmaOS-amarok tracking, and SigmaOS-amarok lifecycle
+- **Error Handling**: Fail-fast on invalid SigmaOS-amarok configurations or unsupported SigmaOS-amarok types
 
 ## API
 The component provides the following public APIs:
-- `music::player::play(playlist)` - Play music from a given playlist
-- `music::playlist::create(name)` - Create a new playlist with given name
-- `music::library::manage(library)` - Manage music library and music collection
-- `music::status::player()` - Get music player status and playback status
-- Error types for music failure scenarios or unsupported music types
+-  - Manage a SigmaOS-amarok by given configuration
+-  - Register a SigmaOS-amarok by given name
+-  - Get SigmaOS-amarok status and SigmaOS-amarok availability
+-  - Track SigmaOS-amarok management and SigmaOS-amarok tracking
+- Error types for SigmaOS-amarok failure scenarios or unsupported SigmaOS-amarok types
 
 ## Test Structure (Arrange-Act-ASSERT)
 All tests follow the AAA pattern:
-1. **Arrange**: Set up test environment with specific music configuration
-2. **Act**: Execute the code under test (music play, playlist creation)
-3. **Assert**: Verify the expected music results
+1. **Arrange**: Set up test environment with specific SigmaOS-amarok configuration
+2. **Act**: Execute the code under test (SigmaOS-amarok init, SigmaOS-amarok management)
+3. **Assert**: Verify the expected SigmaOS-amarok results
 
 Example:
-```rust
-#[test]
-fn test_music_player_aaa() {
-    // Arrange
-    let playlist = "my-favorites";
-    
-    // Act
-    let result = music::player::play(playlist);
-    
-    // Assert
-    assert!(result.is_ok());
-    let playing = result.unwrap();
-    assert!(playing.is_playing());
-}
-```
+
 
 ## Development
-- Follows Rust best practices with `#![forbid(unsafe_code)]`
-- Music initialization is best-effort; gracefully degrades on unsupported configurations
-- Comprehensive error types for all music failure scenarios
-- Unit tests provided for music player and playlist management
-- Integration tests for full music system with actual music player integration
+- Follows Rust best practices with 
+- SigmaOS-amarok initialization is best-effort; gracefully degrades on unsupported configurations
+- Comprehensive error types for all SigmaOS-amarok failure scenarios
+- Unit tests provided for SigmaOS-amarok management and configuration
+- Integration tests for full SigmaOS-amarok system with actual SigmaOS-amarok integration
 
 ## TODO
-- Add support for additional music formats (MP3, FLAC, OGG, WAV)
-- Expand playlist capabilities (playlist sharing, playlist collaboration, playlist import/export)
-- Add library management features (music tagging, album art, music metadata)
-- Create integration tests with actual music player systems and music management
-- Implement music persistence and player state management
+- Add support for additional SigmaOS-amarok types
+- Expand SigmaOS-amarok capabilities (SigmaOS-amarok features, SigmaOS-amarok configurations, SigmaOS-amarok tracking)
+- Add lifecycle features (SigmaOS-amarok tracking, SigmaOS-amarok lifecycle, SigmaOS-amarok propagation)
+- Create integration tests with actual SigmaOS-amarok systems and SigmaOS-amarok integration
+- Implement SigmaOS-amarok persistence and SigmaOS-amarok state management
